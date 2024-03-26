@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{E1CE1FEE-67BE-6533-73AA-CC578BE80DCD}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/Nav_followPlayer.cs">
+    <Files>
+      <File FileName="Assets/scripts/Nav_followPlayer.cs" Line="25" Column="58" />
+      <File FileName="Assets/scripts/Nav_patrol.cs" Line="19" Column="1" />
+      <File FileName="Assets/scripts/Nav_MoveToClick.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/NavTerrain_Modifier.cs" Line="36" Column="14" />
+      <File FileName="Assets/scripts/GameManager.cs" Line="8" Column="17" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="My project (1)" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="scripts" expanded="True">
+                <Node name="Nav_followPlayer.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="602c6725-d6be-4c16-a81d-692c4f83d5a5" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
