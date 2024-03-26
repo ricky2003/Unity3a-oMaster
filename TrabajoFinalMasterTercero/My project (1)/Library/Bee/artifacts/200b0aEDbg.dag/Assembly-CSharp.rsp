@@ -356,6 +356,8 @@
 -analyzer:"/Users/ricardogarciavillaraco/Desktop/ceu/ceu/MASTER VR/2 programacion videojuegos/2022.3.21f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/Users/ricardogarciavillaraco/Desktop/ceu/ceu/MASTER VR/2 programacion videojuegos/2022.3.21f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/scripts/ArgumentOutofRangeException.cs"
+"Assets/scripts/cambioDeEscena.cs"
+"Assets/scripts/CollisionDetector.cs"
 "Assets/scripts/GameManager.cs"
 "Assets/scripts/NavTerrain_Modifier.cs"
 "Assets/scripts/Nav_followPlayer.cs"

@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.AI;
 
 public class Nav_MoveToGrip : MonoBehaviour
 {
     public Camera cam;
     private NavMeshAgent agent;
+    public Scene EndGame;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,5 +28,8 @@ public class Nav_MoveToGrip : MonoBehaviour
             }
         }
         
+        
     }
+    
+
 }
