@@ -1,7 +1,9 @@
 ﻿<Properties StartupConfiguration="{E1CE1FEE-67BE-6533-73AA-CC578BE80DCD}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/CollisionDetector.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/Nav_MoveToClick.cs">
     <Files>
-      <File FileName="Assets/scripts/CollisionDetector.cs" Line="7" Column="5" />
+      <File FileName="Assets/scripts/CollisionDetector.cs" Line="15" Column="6" />
+      <File FileName="Assets/scripts/Nav_patrol.cs" Line="31" Column="43" />
+      <File FileName="Assets/scripts/Nav_MoveToClick.cs" Line="11" Column="29" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

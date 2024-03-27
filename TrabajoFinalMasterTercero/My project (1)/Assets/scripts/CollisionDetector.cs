@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class CollisionDetector : MonoBehaviour
 {
-    public void OnCollisionEnter2D(Collision2D collision)
+
+    void Update()
     {
-        if (collision.collider.CompareTag("Player"))
-        {
-            Debug.Log("END GAME");
-        }
+        
+    }
+    public void OnColisionEnter(Collider other)//objeto que nos ha chocado 
+    {
+        Debug.Log("Detectado una colision");
     }
 }

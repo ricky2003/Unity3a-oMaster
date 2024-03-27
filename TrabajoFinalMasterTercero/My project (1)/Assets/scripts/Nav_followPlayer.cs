@@ -6,8 +6,8 @@ using UnityEngine.AI;
 public class Nav_followPlayer : MonoBehaviour
 {
     public Transform player;
-    public Transform cazador;
     private NavMeshAgent agent;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,11 +19,8 @@ public class Nav_followPlayer : MonoBehaviour
     void Update()
     {
         agent.SetDestination(player.position);//los atributos que tiene el transform lo que cojemos en esta caso es su posicion
-       
         
+
     }
-    private void OnCollisionEneter3D(Collision collision)
-    {
-        Debug.Log("EndGame");
-    }
+    
 }
