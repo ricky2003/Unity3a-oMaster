@@ -9,13 +9,16 @@ public class Nav_MoveToGrip : MonoBehaviour
     public Camera cam;
     private NavMeshAgent agent;
     public Transform player;
+   
     public Scene EndGame;
     // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        agent.destination = player.position;
+
+
        
+
     }
 
     // Update is called once per frame
@@ -30,16 +33,12 @@ public class Nav_MoveToGrip : MonoBehaviour
                 agent.SetDestination(hit.point);
             }
         }
+        
 
     }
-    public void OnColisionEnter(Collider other)//objeto que nos ha chocado 
-    {
-        if (other.CompareTag("Cazador"))
-        {
-            Debug.Log("Detectado una colision");
-            SceneManager.LoadScene("EndGame");
-        }
-    }
+   
+
+
 
 
 

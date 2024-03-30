@@ -67,6 +67,7 @@
     <Compile Include="Assets/scripts/Nav_MoveToClick.cs" />
     <Compile Include="Assets/scripts/CollisionDetector.cs" />
     <Compile Include="Assets/scripts/cambioDeEscena.cs" />
+    <Compile Include="Assets/EndGame.cs" />
     <Compile Include="Assets/scripts/Nav_followPlayer.cs" />
   </ItemGroup>
   <ItemGroup>
