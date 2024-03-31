@@ -61,7 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/scripts/GameManager.cs" />
-    <Compile Include="Assets/scripts/NavTerrain_Modifier.cs" />
+    <Compile Include="Assets/scripts/NavTerrain.cs" />
     <Compile Include="Assets/scripts/Nav_patrol.cs" />
     <Compile Include="Assets/scripts/ArgumentOutofRangeException.cs" />
     <Compile Include="Assets/scripts/Nav_MoveToClick.cs" />

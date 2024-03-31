@@ -9,10 +9,6 @@ public class CollisionDetector : MonoBehaviour
     public GameObject cazador;
     public GameObject patrols;
 
-   
-
-
-
     private void OnTriggerStay(Collider other)//objeto que nos ha chocado 
     {
         
@@ -24,5 +20,6 @@ public class CollisionDetector : MonoBehaviour
             SceneManager.LoadScene("EndGame");
         }
     }
-   
+    
+
 }

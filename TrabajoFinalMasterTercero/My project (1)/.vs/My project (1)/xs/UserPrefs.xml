@@ -1,8 +1,10 @@
 ﻿<Properties StartupConfiguration="{E1CE1FEE-67BE-6533-73AA-CC578BE80DCD}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/CollisionDetector.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/NavTerrain.cs">
     <Files>
-      <File FileName="Assets/scripts/Nav_followPlayer.cs" Line="19" Column="9" />
-      <File FileName="Assets/scripts/CollisionDetector.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/Nav_MoveToClick.cs" Line="35" Column="5" />
+      <File FileName="Assets/scripts/Nav_followPlayer.cs" />
+      <File FileName="Assets/scripts/Nav_patrol.cs" />
+      <File FileName="Assets/scripts/NavTerrain.cs" Line="42" Column="1" />
     </Files>
     <Pads>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
