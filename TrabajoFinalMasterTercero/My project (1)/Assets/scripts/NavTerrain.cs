@@ -15,9 +15,12 @@ public class NavTerrain : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        other.CompareTag("Player");
+        other.CompareTag("Cazador");
         Debug.Log("Entrada");
         if(other.TryGetComponent<NavMeshAgent>(out NavMeshAgent agent))
         {
+            
             agent.speed /= NavMesh.GetAreaCost(_meshSurface.area);
             if (_meshSurface.AffectsAgentType(agent.agentTypeID))
             {
@@ -33,7 +36,7 @@ public class NavTerrain : MonoBehaviour
         {
             if (_meshSurface.AffectsAgentType(agent.agentTypeID))
             {
-                agent.speed *= NavMesh.GetAreaCost(_meshSurface.area);
+                agent.speed *=NavMesh.GetAreaCost(_meshSurface.area);
             }
         }
     }

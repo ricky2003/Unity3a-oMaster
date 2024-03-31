@@ -574,6 +574,7 @@ GameObject:
   - component: {fileID: 135666286}
   - component: {fileID: 135666288}
   - component: {fileID: 135666285}
+  - component: {fileID: 135666289}
   m_Layer: 0
   m_Name: terreno1
   m_TagString: Untagged
@@ -676,9 +677,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 135666283}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5eb574216ffa04983ba431c45a280342, type: 3}
+  m_Script: {fileID: 11500000, guid: 464d6592f9d0b4044bcde86ed65c1b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &135666289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135666283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 3
+  m_OverrideGenerateLinks: 1
+  m_GenerateLinks: 1
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: f46d2d58
 --- !u!1 &141842311
 GameObject:
   m_ObjectHideFlags: 0
@@ -1078,7 +1098,7 @@ GameObject:
   - component: {fileID: 204008894}
   - component: {fileID: 204008893}
   - component: {fileID: 204008898}
-  - component: {fileID: 204008897}
+  - component: {fileID: 204008899}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1095,7 +1115,7 @@ Transform:
   m_GameObject: {fileID: 204008891}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 80.5, y: -1.3, z: 185.5}
+  m_LocalPosition: {x: -20.8, y: -1.3, z: 94}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1188,7 +1208,29 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 204008891}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &204008897
+--- !u!195 &204008898
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204008891}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 20
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 29
+  m_ObstacleAvoidanceType: 3
+--- !u!54 &204008899
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1215,28 +1257,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!195 &204008898
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 204008891}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 20
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 1
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!1 &205910929
 GameObject:
   m_ObjectHideFlags: 0
@@ -2421,7 +2441,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: -0.5, y: 2.26, z: 8.37}
-  m_LocalScale: {x: 6, y: 2, z: 2}
+  m_LocalScale: {x: 6, y: 2.5, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 574053822}
@@ -4113,9 +4133,9 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.083333336
+  m_VoxelSize: 0.06666667
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 7f62aac1a6cfa4b3f9cafce21147f65b, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 12ea63b5a8ddf448b96c81eeb51f28fa, type: 2}
   m_BuildHeightMesh: 0
 --- !u!4 &1016862463
 Transform:
@@ -4161,7 +4181,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.06666667
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 042b39bdd12c54debb357bf25aa6048d, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 70bedabcee1eb46808f72d47e7b7f7b0, type: 2}
   m_BuildHeightMesh: 0
 --- !u!1 &1024188090
 GameObject:
@@ -4176,6 +4196,7 @@ GameObject:
   - component: {fileID: 1024188093}
   - component: {fileID: 1024188095}
   - component: {fileID: 1024188092}
+  - component: {fileID: 1024188096}
   m_Layer: 0
   m_Name: terreno2
   m_TagString: Untagged
@@ -4213,7 +4234,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -4278,9 +4299,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 1024188090}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5eb574216ffa04983ba431c45a280342, type: 3}
+  m_Script: {fileID: 11500000, guid: 464d6592f9d0b4044bcde86ed65c1b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1024188096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024188090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 3
+  m_OverrideGenerateLinks: 1
+  m_GenerateLinks: 1
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: 
 --- !u!1 &1025179786
 GameObject:
   m_ObjectHideFlags: 0
@@ -4399,42 +4439,15 @@ GameObject:
   - component: {fileID: 1032644608}
   - component: {fileID: 1032644607}
   - component: {fileID: 1032644611}
-  - component: {fileID: 1032644605}
   - component: {fileID: 1032644612}
+  - component: {fileID: 1032644613}
   m_Layer: 0
   m_Name: Cazador
-  m_TagString: Untagged
+  m_TagString: Cazador
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &1032644605
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1032644604}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 1
 --- !u!136 &1032644607
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4546,18 +4559,45 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 1479372276
   m_Radius: 0.5
-  m_Speed: 20
-  m_Acceleration: 8
+  m_Speed: 10
+  m_Acceleration: 6
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 100
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
   m_BaseOffset: 1
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
+  m_WalkableMask: 29
+  m_ObstacleAvoidanceType: 3
+--- !u!54 &1032644613
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032644604}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1037964922
 GameObject:
   m_ObjectHideFlags: 0
@@ -4570,6 +4610,7 @@ GameObject:
   - component: {fileID: 1037964927}
   - component: {fileID: 1037964923}
   - component: {fileID: 1037964926}
+  - component: {fileID: 1037964928}
   m_Layer: 0
   m_Name: agua
   m_TagString: Untagged
@@ -4638,9 +4679,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 1037964922}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5eb574216ffa04983ba431c45a280342, type: 3}
+  m_Script: {fileID: 11500000, guid: 464d6592f9d0b4044bcde86ed65c1b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1037964928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037964922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 4
+  m_OverrideGenerateLinks: 1
+  m_GenerateLinks: 1
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1046498833
 GameObject:
   m_ObjectHideFlags: 0
@@ -6017,7 +6077,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: 6.4, y: 2.11, z: 8.31}
-  m_LocalScale: {x: 5, y: 2, z: 2}
+  m_LocalScale: {x: 5, y: 2.5, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 574053822}
@@ -6316,42 +6376,15 @@ GameObject:
   - component: {fileID: 1431895812}
   - component: {fileID: 1431895811}
   - component: {fileID: 1431895810}
-  - component: {fileID: 1431895809}
   - component: {fileID: 1431895815}
+  - component: {fileID: 1431895816}
   m_Layer: 0
   m_Name: Patrol
-  m_TagString: Untagged
+  m_TagString: Patrulleros
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &1431895809
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1431895808}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &1431895810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6473,8 +6506,35 @@ NavMeshAgent:
   m_AutoRepath: 1
   m_Height: 2
   m_BaseOffset: 1
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
+  m_WalkableMask: 0
+  m_ObstacleAvoidanceType: 3
+--- !u!54 &1431895816
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431895808}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1436250397
 GameObject:
   m_ObjectHideFlags: 0
