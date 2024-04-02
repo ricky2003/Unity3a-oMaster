@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{E1CE1FEE-67BE-6533-73AA-CC578BE80DCD}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/Nav_followPlayer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/Nav_MoveToClick.cs">
     <Files>
       <File FileName="Assets/scripts/Nav_MoveToClick.cs" Line="43" Column="47" />
       <File FileName="Assets/scripts/Nav_followPlayer.cs" Line="26" Column="1" />
-      <File FileName="Assets/scripts/Nav_patrol.cs" />
+      <File FileName="Assets/scripts/Nav_patrol.cs" Line="38" Column="34" />
       <File FileName="Assets/scripts/NavTerrain.cs" />
     </Files>
   </MonoDevelop.Ide.Workbench>
