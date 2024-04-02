@@ -16,7 +16,7 @@ public class Nav_patrol : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         maxWayPoint = waypoitParent.transform.childCount;
         wayPoits = new GameObject[maxWayPoint];
-        Debug.Log(maxWayPoint);
+        //Debug.Log(maxWayPoint);
         for (int i = 0; i < maxWayPoint; i++)
         {
             wayPoits[i] = waypoitParent.transform.GetChild(i).gameObject;
