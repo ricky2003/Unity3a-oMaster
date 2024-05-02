@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+
+[System.Serializable]
 
 public class CaracterPosition 
 {
-    private  string name { get; set; }
-    private float timeStamp { get; set; }
-    private Vector3 position { get; set; }//forma de hacer getter y setters
+    public string name;
+    public float timeStamp;
+    public Vector3 position;//forma de hacer getter y setters
 
     public CaracterPosition(string name, float timestatmp, Vector3 position)
     {
@@ -14,6 +17,7 @@ public class CaracterPosition
         this.position = position;
         this.timeStamp = timestatmp;
     }
+    public CaracterPosition() { }
 
     public override string ToString()
     {

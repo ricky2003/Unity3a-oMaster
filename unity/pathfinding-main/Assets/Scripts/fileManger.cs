@@ -11,11 +11,11 @@ public static class fileManger
         try
         {
             File.WriteAllText(fullPath, Data);
-            Debug.Log("FicherGuaradado corectamente en: " + fullPath);
+            Debug.Log("Fichero Guaradado corectamente en: " + fullPath);
             return true;
         }catch(IOException ex)
         {
-            Debug.Log("error al guardadr el fichero en : " + FileName+" con error: "+ex);
+            Debug.Log("error al guardadar el fichero en : " + FileName+" con error: "+ex);
             return false;
         }
     }  
