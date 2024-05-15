@@ -324,7 +324,7 @@
 -r:"/Applications/Unity/Unity.app/Contents/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
 -r:"/Applications/Unity/Unity.app/Contents/NetStandard/ref/2.1.0/netstandard.dll"
 -r:"/Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.iOS.Extensions.Xcode.dll"
--r:"Assets/Plugins/Mono.Data.Sqlite.dll"
+-r:"Assets/Plugins/Mono.Data.Sqlite (1).dll"
 -r:"Library/PackageCache/com.unity.testtools.codecoverage@1.2.5/lib/ReportGenerator/ReportGeneratorMerged.dll"
 -r:"Library/PackageCache/com.unity.visualscripting@1.9.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/200b0aEDbg.dag/Unity.AI.Navigation.Editor.ConversionSystem.ref.dll"
@@ -361,11 +361,13 @@
 "Assets/scripts/cambioDeEscena.cs"
 "Assets/scripts/CollisionDetector.cs"
 "Assets/scripts/DataManager.cs"
+"Assets/scripts/DBManager.cs"
 "Assets/scripts/GameManager.cs"
 "Assets/scripts/NavTerrain.cs"
 "Assets/scripts/Nav_followPlayer.cs"
 "Assets/scripts/Nav_MoveToClick.cs"
 "Assets/scripts/Nav_patrol.cs"
+"Assets/scripts/salto aotra pantalla.cs"
 -langversion:9.0
 
 /deterministic
