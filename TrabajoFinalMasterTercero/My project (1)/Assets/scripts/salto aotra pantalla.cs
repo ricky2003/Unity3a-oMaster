@@ -15,25 +15,25 @@ public class saltoaotrapantalla : MonoBehaviour
     /// <summary>
     /// yamar cuanod esta logeado
     /// </summary>
+    ///
+    public string username;
+     public string password;
 
     public void OnSubmitLoging()
     {
         
-        string username = userNameInputField.text;
-        string password = passwordInputField.text;
+        username = userNameInputField.text;
+        password = passwordInputField.text;
 
         Debug.Log("Username: " + username);
         Debug.Log("Password: " + password);
-        string _Log = "'Usuarios' WHERE 'UserName' LIKE '" + username +
-                       "' AND 'Password' LIKE ' " + password+ " ' ";
-        DBManager _DBManager = GameObject.Find("DBManager").GetComponent<DBManager>();
-        SqliteDataReader Resultado = _DBManager.Select(_Log);
+      
         string logingcheckMessage = checkLoginInfo(username,password);
 
-        if (string.IsNullOrEmpty(logingcheckMessage) && Resultado.HasRows)
+        if (string.IsNullOrEmpty(logingcheckMessage))
         {
             Debug.Log("Loging");
-            Resultado.Close();
+        
             SceneManager.LoadScene(1);//este uno se refiere a que en el file en el bilding setings el numero de la escena a sociado a el main scene es el 1
 
         }
@@ -41,7 +41,7 @@ public class saltoaotrapantalla : MonoBehaviour
         {
             Debug.LogError("error: " + logingcheckMessage);
             errorText.text ="ERROR: "+ logingcheckMessage;
-            Resultado.Close();
+
 
         }
     }
@@ -70,5 +70,19 @@ public class saltoaotrapantalla : MonoBehaviour
         return retirnString;
     }
 
-   
+    public void Registarse()
+    {
+            Debug.Log("Registarndose");
+            SceneManager.LoadScene(4);//este uno se refiere a que en el file en el bilding setings el numero de la escena a sociado a el registrador es el 4
+
+    }
+    public void IniciarSasion()
+    {
+        Debug.Log("ComenzarJuego");
+        SceneManager.LoadScene(1);//este uno se refiere a que en el file en el bilding setings el numero de la escena a sociado a el registrador es el 4
+
+    }
+
+    
+
 }

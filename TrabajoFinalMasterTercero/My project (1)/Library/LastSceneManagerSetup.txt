@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/inicio De sesoion.unity
+- path: Assets/Scenes/Registrador.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

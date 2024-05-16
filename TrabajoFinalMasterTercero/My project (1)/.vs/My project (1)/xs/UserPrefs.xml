@@ -1,14 +1,13 @@
 ﻿<Properties StartupConfiguration="{E1CE1FEE-67BE-6533-73AA-CC578BE80DCD}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/salto aotra pantalla.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/DBManager.cs">
     <Files>
-      <File FileName="Assets/scripts/Nav_MoveToClick.cs" Line="43" Column="47" />
-      <File FileName="Assets/scripts/DBManager.cs" Line="59" Column="29" />
-      <File FileName="Assets/scripts/salto aotra pantalla.cs" Line="28" Column="69" />
+      <File FileName="Assets/scripts/DBManager.cs" Line="42" Column="11" />
+      <File FileName="Assets/scripts/salto aotra pantalla.cs" Line="88" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4bd7afc8-b17c-4e07-b919-3f25fd3e17a9" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e512afe1-5813-442f-a240-2eedf60837b4" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

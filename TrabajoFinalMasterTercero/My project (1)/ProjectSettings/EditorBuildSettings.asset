@@ -17,7 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/UnJugador.unity
     guid: 0dda6c3040ed6429e8a5314519119b44
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Inicio de sesion.unity
     guid: 67e1adca9bd404a16b8c315ca0ddf321
+  - enabled: 1
+    path: Assets/Scenes/Registrador.unity
+    guid: ffbfe2414273d4a2880e81cd360a9be6
+  - enabled: 1
+    path: Assets/Scenes/inicio De sesoion.unity
+    guid: 619af5945501744cba67f259c905bd7d
   m_configObjects: {}

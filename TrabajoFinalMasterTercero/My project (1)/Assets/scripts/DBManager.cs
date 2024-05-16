@@ -16,6 +16,7 @@ public class DBManager : MonoBehaviour
         ",Password VARCHAR(50) NOT NULL);";
     private int numeroData = 100;
     private IDbConnection dbConnection;
+    public saltoaotrapantalla salto;
 
     // Start is called before the first frame update
     void Start()
@@ -35,8 +36,10 @@ public class DBManager : MonoBehaviour
         dbConnection.Open();
         IDbCommand dbcmd = dbConnection.CreateCommand();//creamos un nuevo comando
         dbcmd.CommandText = SQL_CREATE;//comando de sql que se hace para crear la tabla de datos
-        //dbcmd.ExecuteReader();
+                                       //dbcmd.ExecuteReader();
 
+        //guardar en la base de datos
+        //salto.username;
 
         return dbConnection;
     }
