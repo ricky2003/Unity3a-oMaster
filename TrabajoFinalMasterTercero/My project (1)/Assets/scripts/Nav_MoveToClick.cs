@@ -48,12 +48,4 @@ public class Nav_MoveToGrip : MonoBehaviour
         }
 
     }
-
-
-
-
-
-
-
-
 }

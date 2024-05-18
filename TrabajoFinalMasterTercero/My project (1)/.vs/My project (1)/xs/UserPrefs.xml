@@ -1,13 +1,16 @@
 ﻿<Properties StartupConfiguration="{E1CE1FEE-67BE-6533-73AA-CC578BE80DCD}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/DBManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/DataManager.cs">
     <Files>
-      <File FileName="Assets/scripts/DBManager.cs" Line="42" Column="11" />
-      <File FileName="Assets/scripts/salto aotra pantalla.cs" Line="88" Column="2" />
+      <File FileName="Assets/scripts/salto aotra pantalla.cs" Line="2" Column="1" />
+      <File FileName="Assets/scripts/DataManager.cs" Line="20" Column="33" />
+      <File FileName="Assets/scripts/FileManager.cs" Line="15" Column="38" />
+      <File FileName="Assets/scripts/Usuarios.cs" Line="28" Column="6" />
+      <File FileName="../../../../../../Library/Application Support/DefaultCompany/My project (1)/UsuariosJSON.json" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e512afe1-5813-442f-a240-2eedf60837b4" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="20a9cc7a-4200-47e3-aa2f-f4c53973a366" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

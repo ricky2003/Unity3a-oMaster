@@ -14,49 +14,32 @@ public class DBManager : MonoBehaviour
         "Id INTEGER UNIQUE NOT NULL PRIMARY KEY AUTOINCREMENT" +
         ",UserName VARCHAR(50) NOT NULL" +
         ",Password VARCHAR(50) NOT NULL);";
-    private int numeroData = 100;
+    //private int numeroData = 100;
     private IDbConnection dbConnection;
-    public saltoaotrapantalla salto;
+    
 
     // Start is called before the first frame update
-    void Start()
+
+    public void init()
     {
-        //conexion a la base de datos
         Debug.Log("Start");
         dbConnection = CreateAndOpenDataBase();
-        //SetInputUserAndPasword(dbConnection, user,password);
-
+    }
+    public void close()
+    {
         dbConnection.Close();
         Debug.Log("End");
     }
-
     private IDbConnection CreateAndOpenDataBase()
     {
         IDbConnection dbConnection = new SqliteConnection(dburi);
         dbConnection.Open();
         IDbCommand dbcmd = dbConnection.CreateCommand();//creamos un nuevo comando
         dbcmd.CommandText = SQL_CREATE;//comando de sql que se hace para crear la tabla de datos
-                                       //dbcmd.ExecuteReader();
-
-        //guardar en la base de datos
-        //salto.username;
+        //dbcmd.ExecuteReader();
 
         return dbConnection;
     }
-
-    /*public void SetInputUserAndPasword(IDbConnection dbConnection)
-    {
-        string command = "INSERT INTO Usuarios(UserName,Password) VALUES";
-        command += $"('ricardo','ricardo';),";
-        command = command.Remove(command.Length - 1, 1);
-        command += ";";
-        Debug.Log(command);
-        IDbCommand dbCommand = dbConnection.CreateCommand();
-        dbCommand.CommandText = command;
-        dbCommand.ExecuteNonQuery();
-
-    }*/
-
     public SqliteDataReader Select(string _select)
     {
         dbConnection.Open();
